@@ -1,0 +1,8 @@
+prefix=/home/mirsking/git/urdf_ws/devel
+
+Name: abb
+Description: Description of abb
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mirsking/git/urdf_ws/devel/lib 
+Requires: 

@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<robot name="WuKong">
+	<link name="body">
+		<visual>
+			<geometry>
+				<box size="0.2 0.3 1.6"/>
+			</geometry>
+			<orign xyz="0 0 0.8" />
+		</visual>
+	</link>
+
+	<joint name="ShoulderPitch" type="continuous">
+		<parent link="body" />
+		<child link="Shoulder" />
+		<axis xyz="0 1 0"/>
+		<origin xyz="0 -0.15 0.7"/>
+	</joint>
+
+	<link name="Shoulder">
+ 		<visual>
+		      <geometry>
+				<cylinder length="0.114" radius="0.05"/>
+		      </geometry>
+		      <material name="blue">
+			<color rgba="0 0 .8 1"/>
+		      </material>
+		      <origin rpy="1.57075 0 0" xyz="0 -0.057 0"/>
+    		</visual>
+	</link>
+
+	<joint name="ShoulderRoll" type="continuous">
+		<parent link="Shoulder" />
+		<child link="UpperArm1" />
+		<axis xyz="1 0 0"/>
+		<origin xyz="0 -0.114 0"/>
+	</joint>
+
+	<link name="UpperArm1">
+		<visual>
+		      <geometry>
+				<cylinder length="0.02" radius="0.03"/>
+		      </geometry>
+		      <material name="blue1">
+			<color rgba="0 0 .9 1"/>
+		      </material>
+			<origin rpy="0 0 0" xyz="0 0 -0.01"/>
+    		</visual>
+	</link>
+	
+	<joint name="ShoulderYaw" type="continuous">
+		<parent link="UpperArm1" />
+		<child link="UpperArm2" />
+		<axis xyz="0 0 1"/>
+		<origin xyz="0 0 -0.02"/>
+	</joint>
+
+	<link name="UpperArm2">
+		<visual>
+		      <geometry>
+				<cylinder length="0.241" radius="0.03"/>
+		      </geometry>
+		      <material name="blue1">
+			<color rgba="0 0 .9 1"/>
+		      </material>
+			<origin rpy="0 0 0" xyz="0 0 -0.1205"/>
+    		</visual>
+	</link>
+
+	<joint name="ElbowRoll" type="continuous">
+		<parent link="UpperArm2" />
+		<child link="LowerArm1" />
+		<axis xyz="1 0 0"/>
+		<origin xyz="0 0 -0.241"/>
+	</joint>
+	
+	<link name="LowerArm1">
+		<visual>
+		      <geometry>
+				<cylinder length="0.01" radius="0.02"/>
+		      </geometry>
+		      <material name="blue2">
+			<color rgba="0 1 1"/>
+		      </material>
+			<origin rpy="0 0 0" xyz="0 0 -0.005"/>
+    		</visual>
+	</link>
+
+	<joint name="ElbowYaw" type="continuous">
+		<parent link="LowerArm1" />
+		<child link="LowerArm2" />
+		<axis xyz="0 0 1"/>
+		<origin xyz="0 0 -0.01"/>
+	</joint>
+
+	<link name="LowerArm2">
+		<visual>
+		      <geometry>
+				  <mesh filename="package://wukong/meshes/lowerArm22.STL" />
+		      </geometry>
+		      <material name="blue2">
+			<color rgba="0 0.1 0.5" />
+		      </material>
+			<origin rpy="0 0 0" xyz="0 0 -0.125"/>
+    		</visual>
+	</link>
+	
+	<joint name="WristRoll" type="continuous">
+		<parent link="LowerArm2" />
+		<child link="LowerArm3" />
+		<axis xyz="1 0 0"/>
+		<origin xyz="0 0 -0.250"/>
+	</joint>
+
+	<link name="LowerArm3">
+		<visual>
+		      <geometry>
+				<cylinder length="0.001" radius="0.02"/>
+		      </geometry>
+		      <material name="blue2">
+			<color rgba="0 1 1"/>
+		      </material>
+			  <origin rpy="0 0 0" xyz="0 0 -0.005"/>
+    		</visual>
+	</link>
+
+	<joint name="WristPitch" type="continuous">
+		<parent link="LowerArm3" />
+		<child link="Racket" />
+		<axis xyz="0 1 0"/>
+		<origin xyz="0 0 -0.1"/>
+	</joint>
+
+	<link name="Racket">
+		<visual>
+		      <geometry>
+				<cylinder length="0.1" radius="0.01"/>
+		      </geometry>
+		      <material name="blue3">
+			<color rgba="0.1 1 1"/>
+		      </material>
+			<origin rpy="0 0 0" xyz="0 0 -0.05"/>
+    		</visual>
+	</link>
+
+</robot>

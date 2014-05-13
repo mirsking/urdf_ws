@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "abb")
+set(abb_MAINTAINER "mirsking <mirsking@todo.todo>")
+set(abb_DEPRECATED "")
+set(abb_VERSION "0.0.0")
+set(abb_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(abb_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(abb_BUILDTOOL_DEPENDS "catkin")
