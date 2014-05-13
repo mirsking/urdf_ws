@@ -1,0 +1,8 @@
+prefix=/home/mirsking/git/urdf_ws/install
+
+Name: urdf_2dof
+Description: Description of urdf_2dof
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/mirsking/git/urdf_ws/install/lib 
+Requires: 

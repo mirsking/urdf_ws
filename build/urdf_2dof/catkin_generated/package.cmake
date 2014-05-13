@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "urdf_2dof")
+set(urdf_2dof_MAINTAINER "mirsking <mirsking@todo.todo>")
+set(urdf_2dof_DEPRECATED "")
+set(urdf_2dof_VERSION "0.0.0")
+set(urdf_2dof_BUILD_DEPENDS )
+set(urdf_2dof_RUN_DEPENDS )
+set(urdf_2dof_BUILDTOOL_DEPENDS "catkin")

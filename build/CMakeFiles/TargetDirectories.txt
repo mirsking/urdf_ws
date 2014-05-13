@@ -1,0 +1,7 @@
+/home/mirsking/git/urdf_ws/build/urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir
+/home/mirsking/git/urdf_ws/build/CMakeFiles/clean_test_results.dir
+/home/mirsking/git/urdf_ws/build/CMakeFiles/doxygen.dir
+/home/mirsking/git/urdf_ws/build/gtest/CMakeFiles/gtest.dir
+/home/mirsking/git/urdf_ws/build/gtest/CMakeFiles/gtest_main.dir
+/home/mirsking/git/urdf_ws/build/CMakeFiles/run_tests.dir
+/home/mirsking/git/urdf_ws/build/CMakeFiles/tests.dir

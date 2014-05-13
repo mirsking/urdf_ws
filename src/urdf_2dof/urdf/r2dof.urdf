@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<robot name="r2dof">
+	<link name="base_link">
+		<visual>			
+			<geometry>
+				<cylinder length="0.2" radius="0.05"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.2" radius="0.05"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+		</collision>
+	</link>
+
+	<joint name="joint1" type="continuous">
+		<parent link="base_link" />
+		<child link="link1" />
+		<axis xyz="0 1 0" />
+		<origin xyz="0 0 -0.1" />
+	</joint>
+
+	<link name="link1">
+		<visual>
+			<geometry>
+				<cylinder length="0.3" radius="0.04"/>
+			</geometry>
+			<origin xyz="0 0 -0.15" />
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.3" radius="0.04"/>
+			</geometry>
+			<origin xyz="0 0 -0.15" />
+		</collision>
+	</link>
+
+	<joint name="joint2" type="continuous">
+		<parent link="link1" />
+		<child link="link2" />
+		<axis xyz="0 1 0" />
+		<origin xyz="0 0 -0.3" />
+	</joint>
+
+	<link name="link2">
+		<visual>
+			<geometry>
+				<cylinder length="0.2" radius="0.03" />
+			</geometry>
+			<origin xyz="0 0 -0.1" />
+		</visual>
+		<collision>
+			<geometry>
+				<cylinder length="0.2" radius="0.03" />
+			</geometry>
+			<origin xyz="0 0 -0.1" />
+		</collision>
+	</link>
+</robot>
+
+
+
