@@ -12,9 +12,10 @@
 		</visual>
 	</link>
 
-	<joint name="ShoulderPitch" type="continuous">
+	<joint name="ShoulderPitch" type="revolute">
 		<parent link="body" />
 		<child link="Shoulder" />
+		<limit effort="120.0" lower="-2.2" upper="1.5708" velocity="13.0"/>
 		<axis xyz="0 1 0"/>
 		<origin xyz="0 -0.15 0.7"/>
 	</joint>
@@ -29,9 +30,10 @@
     		</visual>
 	</link>
 
-	<joint name="ShoulderRoll" type="continuous">
+	<joint name="ShoulderRoll" type="revolute">
 		<parent link="Shoulder" />
 		<child link="UpperArm1" />
+		<limit effort="150.0" lower="-2.3213" upper="0.2618" velocity="18.0"/>
 		<axis xyz="1 0 0"/>
 		<origin xyz="0 -0.13395 0"/>
 	</joint>
@@ -46,9 +48,10 @@
     		</visual>
 	</link>
 	
-	<joint name="ShoulderYaw" type="continuous">
+	<joint name="ShoulderYaw" type="revolute">
 		<parent link="UpperArm1" />
 		<child link="UpperArm2" />
+		<limit effort="200.0" lower="-3.1416" upper="1.5708" velocity="12.0"/>
 		<axis xyz="0 0 1"/>
 		<origin xyz="0 0 -0.035"/>
 	</joint>
@@ -63,9 +66,10 @@
     		</visual>
 	</link>
 
-	<joint name="ElbowRoll" type="continuous">
+	<joint name="ElbowRoll" type="revolute">
 		<parent link="UpperArm2" />
 		<child link="LowerArm1" />
+		<limit effort="100.0" lower="-1.0472" upper="2.0944" velocity="20.0"/>
 		<axis xyz="1 0 0"/>
 		<origin xyz="0 0 -0.221"/>
 	</joint>
@@ -80,9 +84,10 @@
     		</visual>
 	</link>
 
-	<joint name="ElbowYaw" type="continuous">
+	<joint name="ElbowYaw" type="revolute">
 		<parent link="LowerArm1" />
 		<child link="LowerArm2" />
+		<limit effort="80.0" lower="-3.1416" upper="3.1416" velocity="11.0"/>
 		<axis xyz="0 0 1"/>
 		<origin xyz="0 0 -0.0606"/>
 	</joint>
@@ -97,9 +102,10 @@
     		</visual>
 	</link>
 	
-	<joint name="WristRoll" type="continuous">
+	<joint name="WristRoll" type="revolute">
 		<parent link="LowerArm2" />
 		<child link="LowerArm3" />
+		<limit effort="150.0" lower="-1.3962" upper="1.3962" velocity="10.0"/>
 		<axis xyz="1 0 0"/>
 		<origin xyz="0 0 -0.19908"/>
 	</joint>
@@ -114,9 +120,10 @@
     		</visual>
 	</link>
 
-	<joint name="WristPitch" type="continuous">
+	<joint name="WristPitch" type="revolute">
 		<parent link="LowerArm3" />
 		<child link="Racket" />
+		<limit effort="30.0" lower="-0.7330" upper="1.4822" velocity="4.5"/>
 		<axis xyz="0 1 0"/>
 		<origin xyz="0 0 0"/>
 	</joint>
