@@ -3,9 +3,12 @@
 	<link name="body">
 		<visual>
 			<geometry>
-				<box size="0.2 0.3 1.6"/>
+				<box size="0.2 0.3 0.8"/>
 			</geometry>
-			<orign xyz="0 0 0.8" />
+			<material name="TecBlue">
+				<color rgba="0.02 0.15 0.69 0.8"/>
+		      	</material>
+			<origin xyz="0 0 0.4" />
 		</visual>
 	</link>
 
@@ -13,18 +16,16 @@
 		<parent link="body" />
 		<child link="Shoulder" />
 		<axis xyz="0 1 0"/>
-		<origin xyz="0 0 0.7"/>
+		<origin xyz="0 -0.15 0.7"/>
 	</joint>
 
 	<link name="Shoulder">
  		<visual>
 		      <geometry>
-				<cylinder length="0.114" radius="0.05"/>
+				<mesh filename="package://wukong/meshes/Shoulder.STL" />
 		      </geometry>
-		      <material name="blue">
-			<color rgba="0 0 .8 1"/>
-		      </material>
-		      <origin rpy="1.57075 0 0" xyz="0 -0.057 0"/>
+		      <material name="TecBlue" />
+		      <origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
 
@@ -32,18 +33,16 @@
 		<parent link="Shoulder" />
 		<child link="UpperArm1" />
 		<axis xyz="1 0 0"/>
-		<origin xyz="0 -0.114 0"/>
+		<origin xyz="0 -0.13395 0"/>
 	</joint>
 
 	<link name="UpperArm1">
 		<visual>
 		      <geometry>
-				<cylinder length="0.02" radius="0.03"/>
+				<mesh filename="package://wukong/meshes/UpperArm1.STL" />
 		      </geometry>
-		      <material name="blue1">
-			<color rgba="0 0 .9 1"/>
-		      </material>
-			<origin rpy="0 0 0" xyz="0 0 -0.01"/>
+		      <material name="TecBlue" />
+			<origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
 	
@@ -51,18 +50,16 @@
 		<parent link="UpperArm1" />
 		<child link="UpperArm2" />
 		<axis xyz="0 0 1"/>
-		<origin xyz="0 0 -0.02"/>
+		<origin xyz="0 0 -0.035"/>
 	</joint>
 
 	<link name="UpperArm2">
 		<visual>
 		      <geometry>
-				<cylinder length="0.241" radius="0.03"/>
+				<mesh filename="package://wukong/meshes/UpperArm2.STL" />
 		      </geometry>
-		      <material name="blue1">
-			<color rgba="0 0 .9 1"/>
-		      </material>
-			<origin rpy="0 0 0" xyz="0 0 -0.1205"/>
+		      <material name="TecBlue" />
+			<origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
 
@@ -70,18 +67,16 @@
 		<parent link="UpperArm2" />
 		<child link="LowerArm1" />
 		<axis xyz="1 0 0"/>
-		<origin xyz="0 0 -0.241"/>
+		<origin xyz="0 0 -0.221"/>
 	</joint>
 	
 	<link name="LowerArm1">
 		<visual>
-		      <geometry>
-				<cylinder length="0.01" radius="0.02"/>
-		      </geometry>
-		      <material name="blue2">
-			<color rgba="0 1 1"/>
-		      </material>
-			<origin rpy="0 0 0" xyz="0 0 -0.005"/>
+			<geometry>
+				<mesh filename="package://wukong/meshes/LowerArm1.STL" />
+			</geometry>
+			<material name="TecBlue" />
+			<origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
 
@@ -89,18 +84,16 @@
 		<parent link="LowerArm1" />
 		<child link="LowerArm2" />
 		<axis xyz="0 0 1"/>
-		<origin xyz="0 0 -0.01"/>
+		<origin xyz="0 0 -0.0606"/>
 	</joint>
 
 	<link name="LowerArm2">
 		<visual>
 		      <geometry>
-				  <mesh filename="package://wukong/meshes/lowerArm22.STL" />
+				  <mesh filename="package://wukong/meshes/LowerArm2.STL" />
 		      </geometry>
-		      <material name="blue2">
-			<color rgba="0 0.1 0.5" />
-		      </material>
-			<origin rpy="0 0 0" xyz="0 0 -0.125"/>
+		      <material name="TecBlue" />
+			<origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
 	
@@ -108,18 +101,16 @@
 		<parent link="LowerArm2" />
 		<child link="LowerArm3" />
 		<axis xyz="1 0 0"/>
-		<origin xyz="0 0 -0.250"/>
+		<origin xyz="0 0 -0.19908"/>
 	</joint>
 
 	<link name="LowerArm3">
 		<visual>
 		      <geometry>
-				<cylinder length="0.001" radius="0.02"/>
+				<mesh filename="package://wukong/meshes/LowerArm3.STL" />
 		      </geometry>
-		      <material name="blue2">
-			<color rgba="0 1 1"/>
-		      </material>
-			  <origin rpy="0 0 0" xyz="0 0 -0.005"/>
+		      <material name="TecBlue" />
+			  <origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
 
@@ -127,18 +118,16 @@
 		<parent link="LowerArm3" />
 		<child link="Racket" />
 		<axis xyz="0 1 0"/>
-		<origin xyz="0 0 -0.1"/>
+		<origin xyz="0 0 0"/>
 	</joint>
 
 	<link name="Racket">
 		<visual>
 		      <geometry>
-				<cylinder length="0.1" radius="0.01"/>
+				<mesh filename="package://wukong/meshes/Racket.STL" />
 		      </geometry>
-		      <material name="blue3">
-			<color rgba="0.1 1 1"/>
-		      </material>
-			<origin rpy="0 0 0" xyz="0 0 -0.05"/>
+		     <material name="TecBlue" />
+			<origin rpy="0 0 0" xyz="0 -0.032 0"/>
     		</visual>
 	</link>
 
