@@ -5,8 +5,8 @@
 			<geometry>
 				<box size="0.2 0.3 0.8"/>
 			</geometry>
-			<material name="TecBlue">
-				<color rgba="0.02 0.15 0.69 0.8"/>
+			<material name="abb_orange">
+				<color rgba="1 0.43 0 1"/>
 		      	</material>
 			<origin xyz="0 0 0.4" />
 		</visual>
@@ -25,8 +25,8 @@
 		      <geometry>
 				<mesh filename="package://wukong/meshes/Shoulder.STL" />
 		      </geometry>
-		      <material name="TecBlue" />
-		      <origin rpy="0 0 0" xyz="0 0 0"/>
+		      <material name="abb_orange" />
+		      <origin rpy="0 0 0" xyz="0 -0.018 0"/>
     		</visual>
 	</link>
 
@@ -43,7 +43,7 @@
 		      <geometry>
 				<mesh filename="package://wukong/meshes/UpperArm1.STL" />
 		      </geometry>
-		      <material name="TecBlue" />
+		      <material name="abb_orange" />
 			<origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
@@ -53,7 +53,7 @@
 		<child link="UpperArm2" />
 		<limit effort="200.0" lower="-3.1416" upper="1.5708" velocity="12.0"/>
 		<axis xyz="0 0 1"/>
-		<origin xyz="0 0 -0.035"/>
+		<origin xyz="0 0 -0.076"/>
 	</joint>
 
 	<link name="UpperArm2">
@@ -61,7 +61,7 @@
 		      <geometry>
 				<mesh filename="package://wukong/meshes/UpperArm2.STL" />
 		      </geometry>
-		      <material name="TecBlue" />
+		      <material name="abb_orange" />
 			<origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
@@ -71,7 +71,7 @@
 		<child link="LowerArm1" />
 		<limit effort="100.0" lower="-1.0472" upper="2.0944" velocity="20.0"/>
 		<axis xyz="1 0 0"/>
-		<origin xyz="0 0 -0.221"/>
+		<origin xyz="0 0 -0.183"/>
 	</joint>
 	
 	<link name="LowerArm1">
@@ -79,7 +79,7 @@
 			<geometry>
 				<mesh filename="package://wukong/meshes/LowerArm1.STL" />
 			</geometry>
-			<material name="TecBlue" />
+			<material name="abb_orange" />
 			<origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
@@ -89,7 +89,7 @@
 		<child link="LowerArm2" />
 		<limit effort="80.0" lower="-3.1416" upper="3.1416" velocity="11.0"/>
 		<axis xyz="0 0 1"/>
-		<origin xyz="0 0 -0.0606"/>
+		<origin xyz="0 0 -0.086"/>
 	</joint>
 
 	<link name="LowerArm2">
@@ -97,7 +97,7 @@
 		      <geometry>
 				  <mesh filename="package://wukong/meshes/LowerArm2.STL" />
 		      </geometry>
-		      <material name="TecBlue" />
+		      <material name="abb_orange" />
 			<origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
@@ -107,7 +107,7 @@
 		<child link="LowerArm3" />
 		<limit effort="150.0" lower="-1.3962" upper="1.3962" velocity="10.0"/>
 		<axis xyz="1 0 0"/>
-		<origin xyz="0 0 -0.19908"/>
+		<origin xyz="0 0 -0.173"/>
 	</joint>
 
 	<link name="LowerArm3">
@@ -115,7 +115,7 @@
 		      <geometry>
 				<mesh filename="package://wukong/meshes/LowerArm3.STL" />
 		      </geometry>
-		      <material name="TecBlue" />
+		      <material name="abb_orange" />
 			  <origin rpy="0 0 0" xyz="0 0 0"/>
     		</visual>
 	</link>
@@ -133,8 +133,8 @@
 		      <geometry>
 				<mesh filename="package://wukong/meshes/Racket.STL" />
 		      </geometry>
-		     <material name="TecBlue" />
-			<origin rpy="0 0 0" xyz="0 -0.032 0"/>
+		     <material name="abb_orange" />
+			<origin rpy="0 0 0" xyz="0 0.0341 0"/>
     		</visual>
 	</link>
 
