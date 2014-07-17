@@ -6,5 +6,6 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(abb)
+SUBDIRS(qixing)
 SUBDIRS(urdf_2dof)
 SUBDIRS(wukong)

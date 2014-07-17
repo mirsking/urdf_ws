@@ -554,6 +554,52 @@ clean: abb/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory qixing
+
+# Convenience name for "all" pass in the directory.
+qixing/all:
+.PHONY : qixing/all
+
+# Convenience name for "clean" pass in the directory.
+qixing/clean: qixing/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : qixing/clean
+
+# Convenience name for "preinstall" pass in the directory.
+qixing/preinstall:
+.PHONY : qixing/preinstall
+
+#=============================================================================
+# Target rules for target qixing/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+qixing/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f qixing/CMakeFiles/_catkin_empty_exported_target.dir/build.make qixing/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f qixing/CMakeFiles/_catkin_empty_exported_target.dir/build.make qixing/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mirsking/git/urdf_ws/build/CMakeFiles 
+	@echo "Built target _catkin_empty_exported_target"
+.PHONY : qixing/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+qixing/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mirsking/git/urdf_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 qixing/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mirsking/git/urdf_ws/build/CMakeFiles 0
+.PHONY : qixing/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: qixing/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+qixing/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f qixing/CMakeFiles/_catkin_empty_exported_target.dir/build.make qixing/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : qixing/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+# clean rule for target.
+clean: qixing/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory urdf_2dof
 
 # Convenience name for "all" pass in the directory.
@@ -561,43 +607,12 @@ urdf_2dof/all:
 .PHONY : urdf_2dof/all
 
 # Convenience name for "clean" pass in the directory.
-urdf_2dof/clean: urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/clean
+urdf_2dof/clean:
 .PHONY : urdf_2dof/clean
 
 # Convenience name for "preinstall" pass in the directory.
 urdf_2dof/preinstall:
 .PHONY : urdf_2dof/preinstall
-
-#=============================================================================
-# Target rules for target urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir
-
-# All Build rule for target.
-urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/build.make urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/build.make urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mirsking/git/urdf_ws/build/CMakeFiles 
-	@echo "Built target _catkin_empty_exported_target"
-.PHONY : urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/all
-
-# Build rule for subdir invocation for target.
-urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mirsking/git/urdf_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mirsking/git/urdf_ws/build/CMakeFiles 0
-.PHONY : urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : _catkin_empty_exported_target
-
-# clean rule for target.
-urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/build.make urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-# clean rule for target.
-clean: urdf_2dof/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory wukong

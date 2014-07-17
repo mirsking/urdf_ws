@@ -117,14 +117,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mirsking/git/urdf_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mirsking/git/urdf_ws/build/CMakeFiles /home/mirsking/git/urdf_ws/build/urdf_2dof/CMakeFiles/progress.marks
-	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_2dof/all
+	cd /home/mirsking/git/urdf_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mirsking/git/urdf_ws/build/CMakeFiles /home/mirsking/git/urdf_ws/build/qixing/CMakeFiles/progress.marks
+	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qixing/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mirsking/git/urdf_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_2dof/clean
+	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qixing/clean
 .PHONY : clean
 
 # The main clean target
@@ -133,12 +133,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_2dof/preinstall
+	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qixing/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_2dof/preinstall
+	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qixing/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -146,12 +146,27 @@ depend:
 	cd /home/mirsking/git/urdf_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+qixing/CMakeFiles/_catkin_empty_exported_target.dir/rule:
+	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f CMakeFiles/Makefile2 qixing/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : qixing/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: qixing/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	cd /home/mirsking/git/urdf_ws/build && $(MAKE) -f qixing/CMakeFiles/_catkin_empty_exported_target.dir/build.make qixing/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... _catkin_empty_exported_target"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"

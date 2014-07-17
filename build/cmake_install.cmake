@@ -86,6 +86,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/mirsking/git/urdf_ws/build/gtest/cmake_install.cmake")
   INCLUDE("/home/mirsking/git/urdf_ws/build/abb/cmake_install.cmake")
+  INCLUDE("/home/mirsking/git/urdf_ws/build/qixing/cmake_install.cmake")
   INCLUDE("/home/mirsking/git/urdf_ws/build/urdf_2dof/cmake_install.cmake")
   INCLUDE("/home/mirsking/git/urdf_ws/build/wukong/cmake_install.cmake")
 
