@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<robot name="Home">
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<box size="0.2 0.3 0.8"/>
+			</geometry>
+			<material name="abb_orange">
+				<color rgba="1 0.43 0 1"/>
+		      	</material>
+			<origin xyz="0 0 0.4" />
+		</visual>
+	</link>
+
+	<joint name="NeckYaw" type="continuous">
+		<parent link="base_link" />
+		<child link="Neck" />
+		<!--<limit effort="120.0" lower="-2.2" upper="1.5708" velocity="13.0"/>-->
+		<axis xyz="0 0 1"/>
+		<origin xyz="0 -0.15 0.7"/>
+	</joint>
+
+	<link name="Neck">
+ 		<visual>
+		      <geometry>
+						<mesh filename="package://home/meshes/Neck.STL" />
+		      </geometry>
+		      <material name="abb_orange" />
+		      <origin rpy="0 0 0" xyz="0 0 0"/>
+    		</visual>
+	</link>
+
+	<joint name="ShoulderPitch" type="continuous">
+		<parent link="Neck" />
+		<child link="Shoulder" />
+		<!--<limit effort="150.0" lower="-2.3213" upper="0.2618" velocity="18.0"/>-->
+		<axis xyz="0 1 0"/>
+		<origin xyz="0 -0.044 0"/>
+	</joint>
+
+	<link name="Shoulder">
+		<visual>
+		      <geometry>
+						<mesh filename="package://home/meshes/Shoulder.STL" />
+		      </geometry>
+		      <material name="abb_orange" />
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+    		</visual>
+	</link>
+	
+	<joint name="ShoulderRoll" type="continuous">
+		<parent link="Shoulder" />
+		<child link="UpperArm1" />
+		<!--<limit effort="200.0" lower="-3.1416" upper="1.5708" velocity="12.0"/>-->
+		<axis xyz="1 0 0"/>
+		<origin xyz="0 -0.0975 0"/>
+	</joint>
+
+	<link name="UpperArm1">
+		<visual>
+		      <geometry>
+						<mesh filename="package://home/meshes/UpperArm1.STL" />
+		      </geometry>
+		      <material name="abb_orange" />
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+    		</visual>
+	</link>
+
+	<joint name="ElbowYaw" type="continuous">
+		<parent link="UpperArm1" />
+		<child link="UpperArm2" />
+		<!--<limit effort="100.0" lower="-1.0472" upper="2.0944" velocity="20.0"/>-->
+		<axis xyz="0 0 1"/>
+		<origin xyz="0 0 -0.1845"/>
+	</joint>
+	
+	<link name="UpperArm2">
+		<visual>
+			<geometry>
+				<mesh filename="package://home/meshes/UpperArm2.STL" />
+			</geometry>
+			<material name="abb_orange" />
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+    		</visual>
+	</link>
+
+	<joint name="ElbowPitch" type="continuous">
+		<parent link="UpperArm2" />
+		<child link="LowerArm1" />
+		<!--<limit effort="80.0" lower="-3.1416" upper="3.1416" velocity="11.0"/>-->
+		<axis xyz="0 1 0"/>
+		<origin xyz="0 0 -0.0965"/>
+	</joint>
+
+	<link name="LowerArm1">
+		<visual>
+		      <geometry>
+				  <mesh filename="package://home/meshes/LowerArm1.STL" />
+		      </geometry>
+		      <material name="abb_orange" />
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+    		</visual>
+	</link>
+	
+	<joint name="WristYaw" type="continuous">
+		<parent link="LowerArm1" />
+		<child link="LowerArm2" />
+		<!--<limit effort="150.0" lower="-1.3962" upper="1.3962" velocity="10.0"/>-->
+		<axis xyz="0 0 1"/>
+		<origin xyz="0 0 -0.1775"/>
+	</joint>
+
+	<link name="LowerArm2">
+		<visual>
+		      <geometry>
+				<mesh filename="package://home/meshes/LowerArm2.STL" />
+		      </geometry>
+		      <material name="abb_orange" />
+			  <origin rpy="0 0 0" xyz="0 0 0"/>
+    		</visual>
+	</link>
+
+	<joint name="WristPitch" type="continuous">
+		<parent link="LowerArm2" />
+		<child link="LowerArm3" />
+		<!--<limit effort="30.0" lower="-0.7330" upper="1.4822" velocity="4.5"/>-->
+		<axis xyz="0 1 0"/>
+		<origin xyz="0 0 -0.03507"/>
+	</joint>
+
+	<link name="LowerArm3">
+		<visual>
+		      <geometry>
+						<mesh filename="package://home/meshes/LowerArm3.STL" />
+		      </geometry>
+		     <material name="abb_orange" />
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+    		</visual>
+	</link>
+
+	<joint name="last" type="fixed">
+		<parent link="LowerArm3" />
+		<child link="tool0" />
+		<origin xyz="0 0 -0.04493"/>
+	</joint>
+
+	<link name="tool0">
+	</link>
+</robot>

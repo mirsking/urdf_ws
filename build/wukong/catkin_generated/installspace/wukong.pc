@@ -1,8 +1,0 @@
-prefix=/home/mirsking/git/urdf_ws/install
-
-Name: wukong
-Description: Description of wukong
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/mirsking/git/urdf_ws/install/lib 
-Requires: 

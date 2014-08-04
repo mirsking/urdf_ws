@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "qixing")
-set(qixing_MAINTAINER "mirsking <mirsking@todo.todo>")
-set(qixing_DEPRECATED "")
-set(qixing_VERSION "0.0.0")
-set(qixing_BUILD_DEPENDS )
-set(qixing_RUN_DEPENDS )
-set(qixing_BUILDTOOL_DEPENDS "catkin")

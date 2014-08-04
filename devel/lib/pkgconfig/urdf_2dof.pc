@@ -1,8 +1,0 @@
-prefix=/home/mirsking/git/urdf_ws/devel
-
-Name: urdf_2dof
-Description: Description of urdf_2dof
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/mirsking/git/urdf_ws/devel/lib 
-Requires: 
